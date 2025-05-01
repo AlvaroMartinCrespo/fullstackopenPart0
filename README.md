@@ -1,7 +1,8 @@
-# fullstackopenPart0
+# Ejercicios Parte 0 - Diagramas de secuencia
 
-#0.4: Nuevo diagrama de nota
+## 0.4: Nuevo diagrama de nota
 
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -39,10 +40,11 @@ sequenceDiagram
     deactivate server
     
     Note right of browser: El navegador ejecuta la función callback que renderiza las notas (incluyendo la nueva)
+```
 
+## 0.5: Diagrama de aplicación de una sola página
 
-#0.5: Diagrama de aplicación de una sola página
-
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -70,9 +72,11 @@ sequenceDiagram
     deactivate server
     
     Note right of browser: El navegador ejecuta la función callback que renderiza las notas usando DOM-API
+```
 
-#0.6: Nueva nota en diagrama de aplicación de una sola pagina
+## 0.6: Nueva nota en diagrama de aplicación de una sola página
 
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -90,3 +94,4 @@ sequenceDiagram
     deactivate server
     
     Note right of browser: El navegador permanece en la misma página y no se realizan solicitudes adicionales
+```
